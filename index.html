@@ -2,155 +2,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elijah Digital Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elijah Digital Solutions</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-            line-height: 1.6;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #183153;
+      line-height: 1.6;
+    }
 
-        header {
-            background: #102a43;
-            color: white;
-            padding: 25px 15px;
-            text-align: center;
-        }
+    header {
+      background: #102a43;
+      color: white;
+      padding: 22px 15px;
+      text-align: center;
+    }
 
-        header h1 {
-            font-size: 27px;
-        }
+    header h1 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
 
-        nav {
-            background: #087e8b;
-            padding: 14px;
-            text-align: center;
-        }
+    nav {
+      background: #087e8b;
+      padding: 12px;
+      text-align: center;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 8px;
-            font-weight: bold;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 65px 20px;
-            background: white;
-        }
+    section {
+      padding: 45px 20px;
+      text-align: center;
+    }
 
-        .hero h2 {
-            color: #102a43;
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
+    .hero {
+      background: #ffffff;
+      padding: 65px 20px;
+    }
 
-        .hero p {
-            margin-bottom: 22px;
-        }
+    .hero h2 {
+      font-size: 30px;
+      color: #102a43;
+      margin-bottom: 15px;
+    }
 
-        .button {
-            display: inline-block;
-            background: #087e8b;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 6px;
-        }
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+    }
 
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
+    .button {
+      display: inline-block;
+      background: #087e8b;
+      color: white;
+      padding: 12px 22px;
+      margin-top: 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        section h2 {
-            color: #102a43;
-            margin-bottom: 20px;
-        }
+    h2 {
+      color: #102a43;
+      margin-bottom: 20px;
+    }
 
-        .service {
-            background: white;
-            padding: 20px;
-            margin: 15px auto;
-            max-width: 450px;
-            border-radius: 8px;
-        }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 25px auto 0;
+    }
 
-        footer {
-            background: #102a43;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    .service-card {
+      background: white;
+      padding: 25px 18px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .service-card h3 {
+      color: #087e8b;
+      margin-bottom: 10px;
+    }
+
+    #about, #contact {
+      background: white;
+    }
+
+    .contact-details {
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #102a43;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Elijah Digital Solutions</h1>
-        <p>Your Digital Future Starts Here</p>
-    </header>
+  <header>
+    <h1>Elijah Digital Solutions</h1>
+    <p>Your Digital Partner for Success</p>
+  </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div class="hero" id="home">
-        <h2>Welcome to Elijah Digital Solutions</h2>
-        <p>We help people and businesses grow in the digital world.</p>
-        <a href="#services" class="button">Explore Our Services</a>
+  <section class="hero" id="home">
+    <h2>Welcome to Elijah Digital Solutions</h2>
+    <p>
+      We provide reliable digital services to help individuals
+      and businesses grow, improve and succeed online.
+    </p>
+    <a class="button" href="#services">Explore Our Services</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Elijah Digital Solutions is a growing digital service
+      business committed to providing creative, reliable and
+      affordable digital solutions.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Here are the services we offer:</p>
+
+    <div class="services">
+
+      <div class="service-card">
+        <h3>Website Design</h3>
+        <p>
+          We create simple and professional websites
+          for individuals and businesses.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>
+          We create attractive flyers, posters, logos
+          and other creative designs.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Digital Support</h3>
+        <p>
+          We help people with basic digital tasks,
+          online services and technology support.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Online Business Support</h3>
+        <p>
+          We help small businesses improve their
+          online presence and reach more customers.
+        </p>
+      </div>
+
     </div>
+  </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Elijah Digital Solutions is a growing digital business
-        focused on providing helpful digital services and solutions.</p>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Do you need our services? Get in touch with us.</p>
 
-    <section id="services">
-        <h2>Our Services</h2>
+    <div class="contact-details">
+      <p>WhatsApp: +231 760 763 725</p>
+      <a class="button"
+         href="https://wa.me/231760763725"
+         target="_blank">
+        Chat With Us on WhatsApp
+      </a>
+    </div>
+  </section>
 
-        <div class="service">
-            <h3>Website Design</h3>
-            <p>Simple and professional websites for businesses.</p>
-        </div>
-
-        <div class="service">
-            <h3>Digital Support</h3>
-            <p>Helping people with basic digital solutions.</p>
-        </div>
-
-        <div class="service">
-            <h3>Online Business Support</h3>
-            <p>Helping businesses build their online presence.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>We would love to hear from you.</p>
-        <p>Email: Contact details coming soon.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Elijah Digital Solutions. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Elijah Digital Solutions. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
